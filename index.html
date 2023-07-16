@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class-generator</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Developed by Mehdi Najaran -->
+</head>
+
+<body>
+    <h1>Class Generator</h1>
+
+    <section class="converter">
+        <input type="text" id="input-word" class="input-word" placeholder="Enter a word">
+    </section>
+
+    <section class="settings">
+        <p>Select the class basis:</p>
+        <input type="radio" id="all-uppercase" name="class-basis" value="all-uppercase">
+        <label for="all-uppercase">All Uppercase</label>
+        <br>
+        <input type="radio" id="all-lowercase" name="class-basis" value="all-lowercase" checked>
+        <label for="all-lowercase">All Lowercase</label>
+        <hr>
+        <p>Select the spacing format:</p>
+        <input type="radio" id="remove-spaces" name="spacing-format" value="remove-spaces">
+        <label for="remove-spaces">Remove Spaces</label>
+        <br>
+        <input type="radio" id="hyphenate-spaces" name="spacing-format" value="hyphenate-spaces" checked>
+        <label for="hyphenate-spaces">Hyphenate Spaces</label>
+        <br>
+        <input type="radio" id="underscore-spaces" name="spacing-format" value="underscore-spaces">
+        <label for="underscore-spaces">Underscore Spaces</label>
+        <br>
+    </section>
+
+    <section class="buttons">
+        <button id="format-button" class="format-button">Format</button>
+        <button id="copy-button" class="copy-button">Copy</button>
+    </section>
+
+
+    <section class="result">
+        <p class="formatted-word" id="output-word"></p>
+    </section>
+
+    <script src="js/app.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'PeydaWeb';
+    src: url('../fonts/Peyda/PeydaWeb-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: PeydaWeb;
+    background-color: #f2f2f2;
+    max-width: 450px;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 28px;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    width: 95%;
+    font-size: 16px;
+    font-family: 'PeydaWeb';
+    border: 1px solid #ffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input[type=text]:focus-visible {
+    border: 1px solid #e6e6e6;
+    outline: none;
+}
+
+button {
+    border-radius: 5px;
+    padding: 11px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'PeydaWeb';
+    color: #fff;
+    flex: 1;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+section.settings {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section.buttons {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.format-button {
+    background-color: #4CAF50;
+}
+
+.format-button:hover {
+    background-color: #45a049;
+}
+
+.copy-button {
+    background-color: #337ab7;
+    display: none;
+}
+
+.copy-button:hover {
+    background-color: #286090;
+}
+
+section.result {
+    display: none;
+    background-color: #ffefb5;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #d5a212;
+    color: #5e4b15;
+}
+
+.alert {
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px 20px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    z-index: 10;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    animation-name: exalert;
+    animation-duration: 0.5s;
+    transition: 1s;
+    justify-content: space-between;
+}
+
+@keyframes exalert {
+    0% {
+        top: -6%;
+    }
+
+    100% {
+        top: 15px;
+    }
+}
+
+.alert.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert.failure {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
